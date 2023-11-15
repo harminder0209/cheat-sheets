@@ -8,11 +8,13 @@ X.509 is an ITU standard defining the format of public key certificates. X.509 a
 
 1. Generate RSA
 
+This is a private for CA cert. you should never share with anyone.
+
 ```bash
 openssl genrsa -aes256 -out ca-key.pem 4096
 ```
 
-2. Generate a public CA Cert
+1. Generate a public CA Cert
 
 ```bash
 openssl req -new -x509 -sha256 -days 365 -key ca-key.pem -out ca.pem
@@ -21,7 +23,6 @@ openssl req -new -x509 -sha256 -days 365 -key ca-key.pem -out ca.pem
 ### Optional Stage: View Certificate's Content
 
 ```bash
-openssl x509 -in ca.pem -text
 openssl x509 -in ca.pem -purpose -noout -text
 ```
 
