@@ -1,0 +1,7 @@
+# check git commit history
+
+git log --oneline 
+
+# suash all last 3 changes into 1
+
+git rebase -i HEAD~3
