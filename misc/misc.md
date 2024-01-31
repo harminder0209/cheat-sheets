@@ -8,4 +8,11 @@ sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo
 ncu -u
 
 
+# Typescript watch
+tsc -w test.ts 
+
+This command will automatically create test.js and monitor test.ts for changes. These changes are automatically added to test.js
+
+
+
 
