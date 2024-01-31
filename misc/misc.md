@@ -11,7 +11,8 @@ ncu -u
 # Typescript watch
 tsc -w test.ts 
 
-This command will automatically create test.js and monitor test.ts for changes. These changes are automatically added to test.js
+This command will automatically create test.js and monitor test.ts for changes. These changes are automatically added to test.js. Then you can run node test.js 
+
 
 
 
