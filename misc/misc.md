@@ -2,7 +2,7 @@
 
 sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 
-#purge a package in ubuntu
+# purge a package in ubuntu
 sudo apt-get purge [package]
 sudo apt-get autoclean
 sudo apt-get autoremove
